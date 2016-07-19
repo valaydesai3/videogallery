@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "ClipsDB": {
+    "host": "ds023245.mlab.com",
+    "port": 23245,
+    "url": "",
+    "database": "heroku_4qb46zjs",
+    "password": "valay123",
+    "name": "ClipsDB",
+    "user": "valay",
+    "connector": "mongodb"
+  }
+}

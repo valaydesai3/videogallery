@@ -1,0 +1,29 @@
+<div ui-view>
+<div class="row">				
+	<div class="col-md-8 thumbnail text-center recommendDiv" >									
+		<a class="" href="#">
+			<img class="img-responsive" ng-src={{recommendClip.thumbnail}} alt="">
+		</a>
+		<div class="overlayDIV werecommendDIV"><h4>We recommend...</h4></div>			
+		<div class="overlayDIV recommendClipTitle">{{recommendClip.title}}</div>
+	</div>
+	<div class="col-md-4 recommendDiv">									
+		<div class="panel panel-default">
+		   <div class="panel-heading clipTitle">This place can be used to display ads.</div>
+		   <div class="panel-body"></div>
+	   </div>
+	</div>	
+</div>
+<div class="row">	 
+	<div class="col-md-4" ng-repeat="clip in allClips | limitTo:allClips.length:1" >
+	   <div class="panel panel-default">
+		   <div class="panel-heading clipTitle">{{clip.title}}</div>
+		   <div class="panel-body">
+				<a class="thumbnail" ui-sref='clips.detail({ id: clip.id })'>
+					<img class="img-responsive" ng-src={{clip.thumbnail}} alt="">
+				</a>							
+			</div>
+	   </div>
+	</div>									
+</div>
+</div>
